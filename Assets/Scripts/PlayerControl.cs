@@ -75,13 +75,15 @@ public class PlayerControl : MonoBehaviour
     {
         float moveX = toMove * Time.fixedDeltaTime * moveMult;
         myBody.velocity = new Vector3(moveX, myBody.velocity.y);
-        if (myBody.velocity.x > 0 || myBody.velocity.x < 0)
+        if (myBody.velocity.x < 0)
         {
-            myAnim.SetBool("isWalking", true);
+            myAnim.SetBool("isWalkingLeft", true);
+            myAnim.SetBool("isWalkingRight", false);
         }
-        else
+        else if (myBody.velocity.x > 0)
         {
-            myAnim.SetBool("isWalking", false);
+            myAnim.SetBool("isWalkingRight", true);
+            myAnim.SetBool("isWalkingLeft", false);
         }
     }
 }
