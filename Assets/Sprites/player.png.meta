@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c20e6d71bae5c7644b7a26954ccb09af
+guid: 4580f21766319d94fbde93b0a4ad98d0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,160 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: felixstand1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 40
-        width: 15
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e4cd31848baeda45b975091342ee5a4
-      internalID: 255765870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: felixstand2
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 40
-        width: 15
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6445cad18b6785c4f8cfcd23b1853df8
-      internalID: 417307878
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: felixwalkright1
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 40
-        width: 19
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6c9111c7f1d83d449abc1949ab8ed77
-      internalID: -164416650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: felixfaceright
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 40
-        width: 10
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7cebda7a5b346d41977a8ac9da83bcf
-      internalID: 2094586989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: felixwalkright2
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 8
-        width: 19
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9fd37fca6f05e746b0bd641953a4f50
-      internalID: 1707520833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: felixwalkleft1
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 8
-        width: 19
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f71d4b493aa57244f8b106efebeecdcb
-      internalID: 1741305901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: felixfaceleft
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 8
-        width: 9
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bab7f3db81f0a634aadecb8bf310d9a6
-      internalID: -1172089646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: felixwalkleft2
+      name: playerstand1
       rect:
         serializedVersion: 2
         x: 60
-        y: 8
-        width: 19
-        height: 30
+        y: 68
+        width: 219
+        height: 438
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +131,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7900596d4897349498cf723d4577d804
-      internalID: -2113901642
+      spriteID: 3032173f16ad02547b897072262ea36a
+      internalID: 1591796871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerstand2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 70
+        width: 219
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b597475fe6da0a42a92107ba1dd158c
+      internalID: -919885361
       vertices: []
       indices: 
       edges: []
@@ -295,14 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      felixstand1: 255765870
-      felixfaceleft: -1172089646
-      felixfaceright: 2094586989
-      felixwalkleft1: 1741305901
-      felixstand2: 417307878
-      felixwalkright2: 1707520833
-      felixwalkright1: -164416650
-      felixwalkleft2: -2113901642
+      playerstand2: -919885361
+      playerstand1: 1591796871
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
