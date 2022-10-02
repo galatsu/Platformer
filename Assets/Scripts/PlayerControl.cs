@@ -62,7 +62,7 @@ public class PlayerControl : MonoBehaviour
         if (hit.collider != null && hit.transform.name == "Floor")
         {
             grounded = true;
-            //Debug.Log(hit.transform.name);
+            Debug.Log(hit.transform.name);
         }
         else
         {
@@ -75,15 +75,29 @@ public class PlayerControl : MonoBehaviour
     {
         float moveX = toMove * Time.fixedDeltaTime * moveMult;
         myBody.velocity = new Vector3(moveX, myBody.velocity.y);
-        if (myBody.velocity.x < 0)
+        if (myBody.velocity.x < 0 || myBody.velocity.x > 0)
         {
-            myAnim.SetBool("isWalkingLeft", true);
-            myAnim.SetBool("isWalkingRight", false);
+            myAnim.SetBool("isWalking", true);
+
+            if (myBody.velocity.x < 0)
+            {
+                myAnim.SetBool("isWalkingLeft", true);
+            } else
+            {
+                myAnim.SetBool("isWalkingLeft", false);
+            }
+            if (myBody.velocity.x > 0)
+            {
+                myAnim.SetBool("isWalkingRight", true);
+            }
+            else
+            {
+                myAnim.SetBool("isWalkingRight", false);
+            }
         }
-        else if (myBody.velocity.x > 0)
+        else
         {
-            myAnim.SetBool("isWalkingRight", true);
-            myAnim.SetBool("isWalkingLeft", false);
+            myAnim.SetBool("isWalking", false);
         }
     }
 }
