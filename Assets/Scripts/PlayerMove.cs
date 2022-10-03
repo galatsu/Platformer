@@ -78,7 +78,23 @@ void HorizontalMove(float toMove)
     if (myBody.velocity.x > 0 || myBody.velocity.x < 0)
     {
         myAnim.SetBool("isWalking", true);
-    }
+
+            if (myBody.velocity.x > 0)
+            {
+                myAnim.SetBool("isWalkingForward", true);
+            } else
+            {
+                myAnim.SetBool("isWalkingForward", false);
+            }
+            if (myBody.velocity.x < 0)
+            {
+                myAnim.SetBool("isWalkingBackwards", true);
+            }
+            else
+            {
+                myAnim.SetBool("isWalkingBackwards", false);
+            }
+        }
     else
     {
         myAnim.SetBool("isWalking", false);
