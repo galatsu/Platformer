@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 { 
     Rigidbody2D myBody;
+    Animator myAnim;
     float horizontalMove;
 
     public float moveMult;
@@ -18,8 +19,6 @@ public class PlayerMove : MonoBehaviour
 
     bool jump = false;
 
-    Animator myAnim;
-
 // Start is called before the first frame update
 void Start()
 {
@@ -31,7 +30,7 @@ void Start()
 void Update()
 {
     horizontalMove = Input.GetAxis("Horizontal");
-    Debug.Log(GetComponent<SpriteRenderer>().size);
+    //Debug.Log(GetComponent<SpriteRenderer>().size);
     if (Input.GetButtonDown("Jump") && grounded)
     {
         jump = true;
