@@ -1276,7 +1276,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -1341,8 +1341,6 @@ MonoBehaviour:
   moveMult: 200
   castDist: 3
   jumpLimit: 10
-  gravityScale: 2
-  gravityFall: 50
 --- !u!1 &1198944003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,7 +2134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8906020655514198005, guid: 291f9165924cb4b4bb6ec32f8547ce2d, type: 3}
       propertyPath: m_Name
-      value: token
+      value: Token
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 291f9165924cb4b4bb6ec32f8547ce2d, type: 3}
