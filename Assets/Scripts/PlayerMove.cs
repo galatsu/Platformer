@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D myBody;
     float horizontalMove;
@@ -62,7 +62,7 @@ public class PlayerControl : MonoBehaviour
         if (hit.collider != null && hit.transform.name == "Floor")
         {
             grounded = true;
-            Debug.Log(hit.transform.name);
+            //Debug.Log(hit.transform.name);
         }
         else
         {
@@ -75,25 +75,9 @@ public class PlayerControl : MonoBehaviour
     {
         float moveX = toMove * Time.fixedDeltaTime * moveMult;
         myBody.velocity = new Vector3(moveX, myBody.velocity.y);
-        if (myBody.velocity.x < 0 || myBody.velocity.x > 0)
+        if (myBody.velocity.x > 0 || myBody.velocity.x < 0)
         {
             myAnim.SetBool("isWalking", true);
-
-            if (myBody.velocity.x < 0)
-            {
-                myAnim.SetBool("isWalkingLeft", true);
-            } else
-            {
-                myAnim.SetBool("isWalkingLeft", false);
-            }
-            if (myBody.velocity.x > 0)
-            {
-                myAnim.SetBool("isWalkingRight", true);
-            }
-            else
-            {
-                myAnim.SetBool("isWalkingRight", false);
-            }
         }
         else
         {
