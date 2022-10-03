@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
     public float moveMult;
 
     bool grounded = false;
-    public float castDist = 0.2f;
+    public float castDist = 0.5f;
 
     public float jumpLimit = 2f;
     public float gravityScale = 5f;
@@ -59,7 +59,7 @@ public class PlayerMove : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, castDist);
         Debug.DrawRay(transform.position, Vector2.down * castDist, new Color(255, 0, 0));
-        if (hit.collider != null && hit.transform.name == "Floor")
+        if (hit.collider != null && hit.transform.name == "Terrain")
         {
             grounded = true;
             //Debug.Log(hit.transform.name);
