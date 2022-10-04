@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class TokenCont : MonoBehaviour
 {
+    private ScoreManager scoreManager;
 
+    private void Start()
+    {
+        scoreManager = GameObject.Find("Canvas").GetComponent<ScoreManager>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
+            scoreManager.score += 1f;
             Destroy(gameObject);
         }
     }
