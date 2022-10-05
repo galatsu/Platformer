@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
-{ 
+{
+    public GameObject Hitbox;
+
     Rigidbody2D myBody;
     Animator myAnim;
     float horizontalMove;
@@ -36,10 +38,14 @@ void Update()
         jump = true;
     }
 
-    if (Input.GetMouseButtonDown(0))
-    {
-        myAnim.SetTrigger("punch");
-    }
+        if (Input.GetMouseButtonDown(0))
+        {
+            Hitbox.SetActive(true);
+            myAnim.SetTrigger("punch");
+        } else
+        {
+            Hitbox.SetActive(false);
+        }
 }
 
 private void FixedUpdate()
