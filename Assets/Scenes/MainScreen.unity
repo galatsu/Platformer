@@ -1499,6 +1499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f2a024b5abf7749840e3d9b8138aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hitbox: {fileID: 1422119152}
   moveMult: 200
   castDist: 3
   jumpLimit: 10
