@@ -38,7 +38,7 @@ void Update()
 
     if (Input.GetKeyDown(KeyCode.Z))
     {
-        myAnim.SetTrigger("punched");
+        myAnim.SetTrigger("punch");
     }
 }
 
