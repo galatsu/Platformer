@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerPunch : MonoBehaviour
 {
     Animator myAnim;
-    Rigidbody myBody;
+    //Rigidbody myBody;
 
     // Start is called before the first frame update
     void Start()
     {
         myAnim = GetComponent<Animator>();
-        myBody = GetComponent<Rigidbody>();
+        //myBody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -20,6 +20,7 @@ public class PlayerPunch : MonoBehaviour
         if (collision.tag == "Player")
         {
             myAnim.SetBool("punched", true);
+            Destroy(gameObject);
         }
     }
 }
