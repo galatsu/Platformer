@@ -35,6 +35,11 @@ void Update()
     {
         jump = true;
     }
+
+    if (Input.GetKeyDown(KeyCode.Z))
+    {
+        myAnim.SetTrigger("punched");
+    }
 }
 
 private void FixedUpdate()
@@ -68,7 +73,6 @@ private void FixedUpdate()
     {
         grounded = false;
     }
-
 }
 
 void HorizontalMove(float toMove)
