@@ -36,7 +36,7 @@ void Update()
         jump = true;
     }
 
-    if (Input.GetKeyDown(KeyCode.Z))
+    if (Input.GetMouseButtonDown(0))
     {
         myAnim.SetTrigger("punch");
     }
