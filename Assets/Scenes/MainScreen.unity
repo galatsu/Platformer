@@ -1387,6 +1387,8 @@ MonoBehaviour:
   moveMult: 200
   castDist: 3
   jumpLimit: 10
+  gravityScale: 1
+  gravityFall: 5
 --- !u!1 &1222408327
 GameObject:
   m_ObjectHideFlags: 0
