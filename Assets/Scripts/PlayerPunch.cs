@@ -21,6 +21,9 @@ public class PlayerPunch : MonoBehaviour
         {
             myAnim.SetBool("punched", true);
             Destroy(gameObject);
+        } else
+        {
+            myAnim.SetBool("punched", false);
         }
     }
 }

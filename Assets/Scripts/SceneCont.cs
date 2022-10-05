@@ -5,17 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneCont : MonoBehaviour
 {
-    void GameScene()
-    {
-        SceneManager.LoadScene("MainScreen");
-    }
+    public string gameScreen;
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeScene()
     {
-        if (Input.GetKeyDown("space")) //if space is pressed down:
-        {
-            GameScene();
-        }
+        SceneManager.LoadScene(gameScreen);
     }
 }
