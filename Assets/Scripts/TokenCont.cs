@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TokenCont : MonoBehaviour
 {
@@ -17,5 +18,6 @@ public class TokenCont : MonoBehaviour
             scoreManager.score += 1f;
             Destroy(gameObject);
         }
+
     }
 }
